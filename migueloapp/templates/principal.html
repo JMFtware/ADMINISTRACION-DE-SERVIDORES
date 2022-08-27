@@ -1,0 +1,155 @@
+<DOCTYPE! html>
+{% load static %}
+        <head> 
+            {% block head %}
+            <title> Pagina principal </title>
+            {% endblock %}
+            <link rel =  "stylesheet" type = "text/css" href  = "{% static 'css/styles.css' %}">
+            
+        </head>
+
+    <body>
+        <!-- Cabecera de la pagina -->
+        <header>
+            <div id = "logotipo">
+            <h1> Software evolution  </h1>
+        </header>
+        <!-- caja de los enlaces -->
+        <nav >
+            <ul> 
+                <li> <a href = "{% url '' %}" > Inicio </li> </a>
+                <li> <a href = "{% url 'nosotros' %}" > Quienes somos </li> </a>
+                <li> <a href = "{% url 'especializacion' %}" > Sectores de especializacion</li> </a>
+                <li> <a href = "{% url 'marquetin' %}" > Plan de marketing</li> </a>
+                <li> <a href = "{% url 'servicios' %}" > servicio </li> </a>
+                
+            <ul>
+        </nav>
+        <!-- bloque de efecto 3D -->
+        <div class = "barra">
+            <span class ="esquina-izquierda"> </span>
+            <span class ="relleno-barra"> </span>
+            <span class ="esquina-derecha"> </span>
+        </div>
+
+<!-- caja del contenido -->
+<div id = "content">
+    <div id = "box">
+
+        {% block body  %}
+        <h3> Nuestros servicio que ofrecemos </h3>
+            <br>
+            <ul>
+                <li> Conceptualizacion </li>
+                <li> Diseño</li>
+                <li> Desarrollo</li>
+                <li> Posicionamiento</li>
+                <li> Mantenimiento</li>
+                <br>
+                <li> Los procesadores de texto.</li>
+                <br>
+                <li> Los editores (por ejemplo, Photoshop).</li>
+                <br>
+                <li> Las hojas de calculo.</li>
+                <br>
+                <li> Los programas de diseño.</li>
+                <br>
+                <li> Los programs de comunicaciones.</li>
+            </ul>
+            <br>
+            <h3> Sus 4 premisas son: </h3>
+                <br>
+                <ul>
+                    <li> <strong> Innovacion: </strong>  se anticipan a las novedades del mercado</li>
+                    <li> <strong> Utilidad: </strong> Sus aplicaciones resultan utiles y atienden a todas las necesidades.</li>
+                    <li> <strong> Adaptacion: </strong> se adaptan a cualquier dispositivo, tanto iOS como Android</li>
+                    <li> <strong> Seguimiento: </strong> Hacen un seguimiento por el cual añaden, si es necesario, cualquier elemento que le pueda servir a la aplicacion.</li>
+                </ul>
+                <br>
+                <h3> C) Productos que demandan: </h3>
+                <br>
+                <ul>
+                    <li> Stock Avanzado</li>
+                    <li> Multi-Email </li>
+                    <li> Documentos Recurrentes</li>
+                    <li> Login Pin</li>
+                    <li> Ordenes Produccion</li>
+                    <li> HumanResources</li>
+                    <li> Produccion</li>
+                    <li> Producto Pack</li>
+                </ul>
+                <br>
+              <h3> Odoo </h3>
+                <br>
+                    <ul>
+                        <li> Odoo es un conjunto de aplicaciones personalizables de codigo abierto ideadas para satisfacer todas las necesidades de su empresa.</li>
+                    </ul>
+                <br>
+                <h3> STEL Arder </h3>
+                <br>
+                <ul>
+                    <li> Integra tu sistema de gestion de relaciones con los clientes (CRM), catalogo, sistema de pedidos y mantenimiento, compras y facturacion en una sola aplicaciona la que puedes acceder con cualquier dispositivo</li>
+                </ul>
+                <br>
+                <h3> Holded </h3>
+                <br>
+                <ul>
+                    <li> Software de facturacion y contabilidad en la nube, diseñado para empresas y trabajdores autonomos. </li>
+                </ul>
+                <br>
+                <h3> Triton </h3>
+                <br>
+                <ul>
+                    <li> Plataforma de verificacion de antecedentes y controles previos al empleo que esta diseñada para empresas, agencias gubernamentales y departamentos de policia. </li>
+                </ul>
+                <br>
+                <h3> Selftrust Fattura </h3>
+                <br>
+                <ul>
+                    <li> Selftrust Fattura ayuda a los campaines a digitalizar facturas y cualquier otro documento de facturación.</li>
+                </ul>
+                <br>
+                <h3> Quickbooks Desktop Enterprise </h3>
+                <br>
+                <ul>
+                    <li> El software de contabilidad lider para pequeñas empresas, Acceso instantaneo a la informacion de clientes, proveedores y empleados </li>
+                </ul>
+                <br>
+                <h3> Quickbooks Online </h3>
+                <br>
+                <ul>
+                    <li> La banca en linea automatizada descarga las transacciones de tu banco o tarjeta de credito directamente en tu empresa en linea con QuickBooks. </li>
+                </ul>
+                <br>
+                <h3> NetSuite </h3>
+                <br>
+                <ul>
+                    <li> NetSuite, el ERP en la nube numero uno del mundo, le brinda la visibilidad y el control que necesita para tomar decisiones inteligentes y crecer con confianza.</li>
+                </ul>
+             
+        {% endblock %}
+        
+    </div>
+   
+</div>      
+
+
+<footer> {% now "DATE_FORMAT" %}  <strong> Instagram </strong>: @_vltron_ <strong>Twitter</strong>: @_vltron_</footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html> 
